@@ -90,6 +90,8 @@ header .highlight {
     border-width: 5px;
     border-color: #008080;
     background-color: #008080;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 35px;
     margin-bottom: 20px;
     padding: 20px 50px 20px 50px;
 }
@@ -173,8 +175,10 @@ margin-top: 10px;
 
 /* Main Col */
 article#main-col {
-    float: left;
-    width: 65%;
+    float: center;
+    padding: 20px 20px 20px 20px;
+    width: 80%;
+    background-color: #ffffff;
 }
 
 /* Portfolio */
@@ -186,11 +190,20 @@ ul#portfolio li{
     background: #e6e6e6;
 }
 
+/* Title Name */
+.page-title {
+    color: #008080;
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
 footer {
-    padding: 20px;
-    margin-top: 20px;
+    padding: 2px;
+    position: sticky;
+    bottom: 0px;
     color: #ffffff;
     background-color: #606060;
+    border-top: #c0c0c0 3px solid;
     text-align: center;
 }
 
