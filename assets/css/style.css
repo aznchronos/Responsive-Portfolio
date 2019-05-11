@@ -13,7 +13,12 @@ body {
 .container {
     width: 80%;
     margin: auto;
-    overflow: hidden;
+    /* overflow: hidden; */
+}
+
+.nav_wrapper {
+    width: 80%;
+    margin: auto;
 }
 
 /* removes ul default padding */
@@ -44,7 +49,7 @@ ul {
 header {
     background: #ffffff;
     color: #000000;
-    /* padding-top: 10px; */
+    padding-top: 10px;
     /* Minimum height that responds to changes in screen size */
     min-height: 70px;
     /* Shortcut that allows me to control the border location, color, size, and orientation */
@@ -88,6 +93,7 @@ header nav {
     
 }
 
+
 header .highlight {
     color: #ffffff;
     border: groove;
@@ -96,7 +102,8 @@ header .highlight {
     background-color: #008080;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 35px;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
+    width: 175px;
     padding: 20px 50px 20px 50px;
 }
 
@@ -286,7 +293,28 @@ footer {
     }
 
     .container {
+        /* overflow: visible; */
+    }
+
+    article#main-col .bio-pic {
+        width: 45%;
+    }
+/* 
+    article#main-col p{
         overflow: visible;
+    } */
+
+    header .highlight {
+        color: #ffffff;
+        border: groove;
+        border-width: 5px;
+        border-color: #008080;
+        background-color: #008080;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 35px;
+        /* margin-bottom: 20px; */
+        width: 200px;
+        padding: 20px;
     }
 }    
 
@@ -317,6 +345,16 @@ footer {
         margin-top: 40px;
     }
 
+    header .highlight {
+        width: 100%;
+        /* border: 20px solid purple; */
+    }
+
+    .nav_wrapper {
+       width: 100%;
+    }
+    
+
     #newsletter button,
     .quote button {
         display: block;
@@ -328,6 +366,11 @@ footer {
     .quote textarea {
         width: 100%;
         margin-bottom: 5px;
+    }
+
+    article#main-col{
+        width: 100%;
+        margin: auto;
     }
 
     article#main-col img{
@@ -358,6 +401,9 @@ footer {
         height: auto;
     }
     .dark {
+        width: 100%;
+    }
+    article#main-col .bio-pic {
         width: 100%;
     }
 }
