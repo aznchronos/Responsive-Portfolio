@@ -7,7 +7,7 @@ body {
     /* font: 15px/1.5 Arial, Helvetica, sans-serif; */
     margin: 0;
     padding: 0;
-    background-color: lightgrey;
+    background-color: #d3d3d3;
 }
 
 /* Global Styles */
@@ -35,8 +35,8 @@ ul {
 
 .dark {
     padding: 15px;
-    background: #35424a;
-    color: #ffffff;
+    background: #ffffff;
+    color: #000000;
     margin-top: 10px;
     margin-bottom: 10px;
 }
@@ -50,6 +50,7 @@ header {
     min-height: 70px;
     /* Shortcut that allows me to control the border location, color, size, and orientation */
     border-bottom: #c0c0c0 3px solid;
+    margin-bottom: 30px;
 }
 
 /* A more specific way to identify which anchor tag is affected */
@@ -67,6 +68,11 @@ header li {
     /* Allows lists to be horizontal */
     display: inline;
     padding: 0 20px 0 20px;
+}
+
+header li .line {
+    text-align: bottom;
+    color: #d3d3d3;
 }
 
 /* To make Name float left */
@@ -151,9 +157,9 @@ header a:hover {
 }
 
 #boxes .box {
-    float: left;
-    text-align: center;
-    width: 30%;
+    float: center;
+    text-align: left;
+    width: 82.5%;
     padding: 10px;
 }
 
@@ -175,10 +181,15 @@ margin-top: 10px;
 
 /* Main Col */
 article#main-col {
-    float: center;
+    float: left;
     padding: 20px 20px 20px 20px;
     width: 80%;
     background-color: #ffffff;
+}
+
+article#main-col img{
+    float: left;
+    padding-right: 20px;
 }
 
 /* Portfolio */
@@ -199,8 +210,9 @@ ul#portfolio li{
 
 footer {
     padding: 2px;
-    position: sticky;
-    bottom: 0px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
     color: #ffffff;
     background-color: #606060;
     border-top: #c0c0c0 3px solid;
@@ -211,7 +223,7 @@ footer {
 /* To avoid content from being cut off */
 /* Media Queries */
 @media screen and (max-width: 980px){
-    
+
 }
 
 /* width of tablet */
@@ -228,12 +240,16 @@ footer {
         text-align: center;
         width: 100%;
     }
-    
+
+    .container {
+        overflow: visible;
+    }
     header nav {
         margin-top: 10px;
     }
 
     header {
+        padding-top: 20px;
         padding-bottom: 20px;
     }
 
